@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/otro.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-8">
+
+	<h3>Prueba formulario</h3>
+	<form oninput="range_control_value.value = range_control.valueAsNumber">
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Comentarios</legend>
+		<label>idCom</label>
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+
+		<br/>
+
+		<label>Nombre</label>
+		<input type="text" class="form-control" placeholder="Introduce el nombre">
+
+		<br/>
+
+		<label>Correo electrónico</label>
+		<input type="email" class="form-control" placeholder="E-mail que más uses">
+
+		<br/>
+
+		<label>Localidad</label>
+		<select class="form-control">
+			<option>Houston, TX.</option>
+			<option>Washington D.C.</option>
+			<option>London, UK</option>
+			<option>SteamLand</option>
+		</select>
+
+		<br/>
+		
+		<label>Comentarios adicionales</label>
+		<textarea class="form-control" rows="3"></textarea>
+
+		<br/>
+
+		<label>Valoración (en una escala de 1 a 5)</label>
+
+		<div class="radio">
+  		<label class="radio inline control-label">
+    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    	1
+  		</label>
+		</div>
+
+		<div class="radio">
+  		<label class="radio inline control-label">
+    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    	2
+  		</label>
+		</div>
+
+		<div class="radio">
+  		<label class="radio inline control-label">
+    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    	3
+  		</label>
+		</div>
+
+		<div class="radio">
+  		<label class="radio inline control-label">
+    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    	4
+  		</label>
+		</div>
+
+		<div class="radio">
+  		<label class="radio inline control-label">
+    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    	5
+  		</label>
+		</div>
+
+		<br/>
+
+		<p>Como no hay más campos en los que utilizar controles distintos en mi tabla, casi que me invento los siguientes...</p>
+
+		<label class="checkbox-inline">
+  		<input type="checkbox" id="inlineCheckbox1" value="option1"> Adoremos a hipnosapo
+		</label>
+		<label class="checkbox-inline">
+  		<input type="checkbox" id="inlineCheckbox2" value="option2"> Honremos a su tallarinesca presencia
+		</label>
+		<br/>
+		<br/>
+		<label>Fecha del comentario</label>
+		<input type="date" value="">
+
+		<br/>
+			<br/>
+				<br/>
+
+		<input type="range" min="100" max="200" name="range_control"> <output for="range_control" name="range_control_value" >0</output>
+
+		<br/>
+		<br/>
+
+		<button type="submit" class="btn btn-primary">Haz algo, payo.</button>
+		<button type="reset" class="btn btn-danger">No toques aquí</button>
+		<button type="button" class="btn btn-info"><a href="http://img3.wikia.nocookie.net/__cb20130128001415/es.futurama/images/5/50/Hipnosapo.png">Aquí sí</a></button>
+		</fieldset>
+	</form>
+	
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+</div> <!-- Container-->
+</body>
+</html>
