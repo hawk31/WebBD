@@ -1,8 +1,22 @@
-body{
-		margin-left:100px;
-		margin-right: 300px;
+#container{
+	width: 90%;
+	margin: 0 auto;
 
 }
+
+#menu{
+	float: left;
+	width: 20%;
+}
+
+#contenido{
+	float: left;
+	width: 50%;
+}
+
+#cabecera{
+	margin: 0 auto;
+	}
 
 
 h1{
