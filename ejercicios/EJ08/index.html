@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo nuevos controles</title>
+<link rel="stylesheet" href="unestilo.css" type="text/css"/> 
+</head>
+<body>
+    <div>
+        <p>Hola</p></div>
+    <div id="container">
+        <div id="inner">
+            <form action="respuesta.php" oninput="range_control_value.value = range_control.valueAsNumber">
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" autofocus required />
+                <br clear="left"/>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" name="email_control" required />
+                <br clear="left"/>
+                <label for="url_control">URL:</label>
+                <input type="url" name="url_control" placeholder="Escripe la URL de tu página web personal" />
+                <br clear="left"/>
+                <label for="date_control">Fecha:</label>
+                <input type="date" name="date_control" />
+                <br clear="left"/>
+                <label for="time_control">Tiempo:</label>
+                <input type="time" name="time_control" />
+                <br clear="left"/>
+                <label for="datetime_control">Fecha y hora de nacimiento:</label>
+                <input type="datetime" name="datetime_control" />
+                <br clear="left"/>
+                <label for="datetime_local">Fecha y hora local:</label>
+                <input type="datetime-local" name="datetime_local" />    
+                <br clear="left"/>
+                <label for="month_control">Mes:</label>
+                <input type="month" name="month_control" />
+                <br clear="left"/>
+                <label for="week_control">Semana:</label>
+                <input type="week" name="week_control" />
+                <br clear="left"/>
+                <label for="number_control">Número (min -10, max 10):</label>
+                <input type="number" name="number_control" min="-10" max="10" value="0" />
+                <br clear="left"/>
+                <label for="range_control">Intervalo (min 0, max 10):</label>
+                <input type="range" name="range_control" min="0" max="10" value="0" />
+                <output for="range_control" name="range_control_value" >0</output>
+                <br clear="left"/>
+                <label for="tel_control">Teléfono:</label>
+                <input type="tel" name="tel_control" />
+                <br clear="left"/>
+                <label for="search_control">Término de búsqueda:</label>
+                <input type="search" name="search_control" />
+                <br clear="left"/>
+                <label for="color_control">Color Favorito:</label>
+                <input type="color" name="color_control" />
+                <br clear="left"/>
+                <label for="patron">Patrón</label>
+                <input pattern="[A-Za-z0-9_]{1,15}" type="text" name="patron"/>
+                <br clear="left"/>
+                <label for="country_code">Country code:</label>
+                <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+                </p>
+                <br clear="left"/>
+                <input type="submit" value="Submit!" style="margin-left: 80px"/>
+                <a href="ejemplo2.html" style="margin-left: 80px">Ejemplo2</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

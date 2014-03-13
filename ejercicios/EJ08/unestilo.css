@@ -1,0 +1,41 @@
+input:not([type=submit]) {
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    margin-bottom: 10px;
+    float:  left;
+    width:  240px;
+}
+
+p label {
+    float:  left;
+    width:  240px;
+    
+}
+
+p {
+    color: #2BACB5;
+}
+
+#container {
+  width: 600px;
+  height: 600px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /*margin: 0px auto;*/
+  background-color: #F5ECD9;
+  /*padding: 20px;*/
+  border-radius: 1%;
+  min-width: 450px;
+
+  margin-left: -300px;
+  margin-top: -300px;  
+
+}
+
+#inner {
+  margin: 0 auto;
+  width: 81%;
+    
+}
