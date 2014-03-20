@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<style>
+::selection {color:red;background:yellow;}
+
+:first-child{
+    color:red;
+}
+
+a:link{
+    color:green;
+}
+
+a:visited{
+    color:orange;
+}
+
+a:hover{
+    color:purple;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+*{
+    width: 300px;
+    margin: 0 auto;
+}
+
+p::first-line{
+    text-transform: uppercase;
+
+}
+div:first-line{
+    background-color: brown;
+}
+
+p:not(#pepe):first-letter{
+    font-size: 200%;
+    color: purple;
+}
+
+h1:before{
+    content: "Capítulo "
+}
+
+p:after{
+    content: "//End of paragraph//";
+}
+table tr:nth-child(even){
+    background-color: #225378;
+}
+
+table tr:nth-child(odd){
+    background-color: #1695A3;
+}
+
+table tr:nth-child(1){
+    background-color: #F3FFE2;
+}
+
+td{
+    color: black;
+}
+
+table{
+    display: table;
+}
+
+ </style>
+</head>
+
+<body lang="es">
+    <h1>1. Intro</h1>
+  <p id="pepe">Lorem <span><em>ipsum dolor</em></span> sit amet, consectetuer adipiscing elit. Praesent odio sem, tempor quis, <em>auctor eu</em>, tempus at, enim.</p>
+ 
+    <p>Lorem <span><i>Hola</i><em>ipsum dolor</em></span> sit amet, consectetuer adipiscing elit. Praesent odio sem, tempor quis, <em>auctor eu</em>, tempus at, enim.</p>
+     
+    <div>
+        Lorem <span><em>ipsum dolor</em></span> sit amet, consectetuer adipiscing elit. Praesent odio sem, <a href="#">tempor quis</a>, <em>auctor eu</em>, tempus at, enim.
+    </div>
+
+    <table>
+        <tr><th>Nombre</th><th>Apellidos</th></tr>
+        <tr><th>Chuck</th><th>Lorre</th></tr>
+        <tr><th>Jonny</th><th>Malkovich</th></tr>
+        <tr><th>Jonny</th><th>Malkovich</th></tr>
+        <tr><th>Jonny</th><th>Malkovich</th></tr>
+    </table>
+    
+    <p lang="en">Lorem ipsum dolor sit amet...</p>
+    <div lang="fr">
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p lang="es_ES">Lorem ipsum dolor sit amet...</p>
+    </div>
+    <p lang="en">Lorem ipsum dolor sit amet...</p>
+    <ul>
+      <li lang="fr">Lorem ipsum dolor sit amet...</li>
+    </ul>
+    
+    <form>
+        <div>
+            <label for="nombre">nombre:</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Introduce nombre"/>
+            <br/>Aquí ya no debería mantener el fondo
+            
+        </div>
+    </form>
+</body></html>

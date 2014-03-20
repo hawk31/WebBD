@@ -1,0 +1,24 @@
+*{
+	width: 768px;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+/*Más específico tiene más prioridad */
+
+h1,p,.c2{
+	width: 768px;
+	margin: 0 auto;
+	padding: 50px;
+	color: #FFAA76;
+}
+
+p span{
+	color: #55A4E1;
+}
+
+p.destacado{
+	color: red;
+	font-style: italic;
+	margin: 0 auto;
+}
