@@ -16,20 +16,20 @@
  
 <form method="post" action="#">
 <ul>
-<li>
+<li class="izquierda">
   <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
-  <div id="izquierda">
-    <span>
+  <div>
+    <span class="completo">
       <input id="nombre" name="nombre" value="" />
       <label for="nombre">Nombre</label>
     </span>
  
-    <span>
+    <span class="completo">
       <input id="apellido1" name="apellido1" value="" />
       <label for="apellido1">Primer apellido</label>
     </span>
  
-    <span>
+    <span class="completo">
       <input id="apellido2" name="apellido2" value="" />
       <label for="apellido2">Segundo apellido</label>
     </span>
@@ -38,26 +38,26 @@
   <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
 </li>
  
-<li>
+<li class="derecha">
   <label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label>
  
-  <div id="derecha">
-    <span>
+  <div>
+    <span class="completo">
       <input id="direccion" name="direccion" value="" />
       <label for="direccion">Calle, número, piso, puerta</label>
     </span>
  
-    <span>
+    <span class="tercio">
       <input id="codigopostal" name="codigopostal" value="" />
       <label for="codigopostal">Código postal</label>
     </span>
  
-    <span>
+    <span class="dostercios">
       <input id="municipio" name="municipio" value="" />
       <label for="municipio">Municipio</label>
     </span>
  
-    <span>
+    <span class="tercio">
       <select id="provincia" name="provincia">
         <option value=""></option>
         <option value="provincia1">Provincia 1</option>
@@ -81,7 +81,7 @@
   <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
 </li>
  
-<li>
+<li class="izquierda">
   <label class="titulo" for="email">Email</label>
  
   <div>
@@ -93,7 +93,7 @@
   <p class="ayuda">Asegúrate de que sea válido</p>
 </li>
  
-<li>
+<li class="derecha">
   <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
  
   <div>
