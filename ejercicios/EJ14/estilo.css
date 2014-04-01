@@ -1,0 +1,104 @@
+#contenedor{
+	width: 768px;
+	background: #FFF;
+  border: 1px solid silver;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+#derecha{
+width: 300px;
+float: right;
+clear: right;
+}
+
+#izquierda{
+width: 300px;
+float: left;
+clear: left;
+}
+
+label {
+  display: block;
+  margin: .5em 0 0 0;
+}
+
+body {
+  font: 13px/1.6 Tahoma, sans-serif;
+  background: #F5F5F5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+span.requerido {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #C00;
+}
+
+h2 {
+  font: normal 2em arial, sans-serif;
+  margin: 0;
+}
+
+ul li.botones {
+  border-top: 2px solid #CCC;
+  clear: both;
+  float: none;
+  padding: 1em 0;
+  margin-top: 1em;
+  text-align: right;
+  width: 100%;
+}
+
+ul li.botones input {
+  font-size: 1.3em;
+}
+
+
+
+ul li label.titulo {
+  font-weight: bold;
+}
+
+ul li {
+  margin: 0.5em 0;
+  padding: 0.5em;}
+
+  ul li label.titulo {
+  font-weight: bold;
+}
+
+ul li div span {
+  float: left;
+  padding: 0.3em 0;
+}
+
+ul li div span.completo {
+  width: 100%;
+}
+
+ul li p.ayuda {
+  display: none;
+}
+
+ul li div {
+  margin-left: 110px;
+  overflow: hidden;
+}
+
+ul li:hover {
+  background-color: #FF9;
+}
+ 
+ul li.botones:hover {
+  background-color: transparent;
+}
+ 
+ul li input:focus {
+  border: 2px solid #E6B700;
+}
