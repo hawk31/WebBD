@@ -1,5 +1,7 @@
+// Esto es jQuery puro y duro
+
 function respuesta(r){
-	$('#tablavacia').html(r);  // Mostramos respuesta en id "tablavacía"
+	$("#tablavacia").html(r);  // Mostramos respuesta en id "tablavacía"
 }
 
 function error(e){
@@ -9,19 +11,17 @@ function error(e){
 function peticion(p){
 
 	var parametro = {
-		variable1: document.getElementById("search").val() // Coge el valor que haya en un input #search
+		variable1: $("#search").val() // Coge el valor que haya en un input #search
 	};
 
 	var post = $.post(
 
 					"server.php", // Voy a ejecutar esto
 					parametro,
-					respuesta,
+					respuesta(),
 					'html'
-
 				);
 
-document.getElementById("searchButton").click(peticion); 
-
-
 }
+
+$("#searchButton").click(peticion); 

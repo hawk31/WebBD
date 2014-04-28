@@ -7,7 +7,7 @@ $link = mysqli_connect('localhost','root','','ejphp');
                 die('Could not connect to MySQL: ' . mysql_error()); 
         } 
 
-        $query = mysqli_query($link, 'select * from articulo where nombre == $var1');
+        $query = mysqli_query($link, 'select * from articulo');
 
         if($query == FALSE){
         	echo "Algo has liado en la consulta";
@@ -31,7 +31,7 @@ $link = mysqli_connect('localhost','root','','ejphp');
         					<th>Marca</th>
         					<th>Colección</th>
         				</tr>
-        			<thead>
+        			</thead>
         			<tbody>
         			</tbody>
         			';
