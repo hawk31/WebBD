@@ -1,13 +1,14 @@
 <?php
 $var1 = $_POST['variable1'];
 
-$link = mysqli_connect('localhost','root','','ejphp'); 
+$link = mysqli_connect('localhost','root','','juguete'); 
 
 	    if (!$link) { 
                 die('Could not connect to MySQL: ' . mysql_error()); 
         } 
-
-        $query = mysqli_query($link, 'select * from articulo');
+        $cadena = "select * from articulo where nombre like '%" . $var1 . "%'";
+        echo $cadena;
+        $query = mysqli_query($link, $cadena);
 
         if($query == FALSE){
         	echo "Algo has liado en la consulta";
@@ -15,8 +16,8 @@ $link = mysqli_connect('localhost','root','','ejphp');
         else{
 
         	// Primero definimos la cabecera de la tabla
-
-        	echo '<table>
+                echo '<div class="table-responsive">';
+        	echo '<table class="table">
         			<thead>
         				<tr>
         					<th>Referencia</th>
@@ -32,13 +33,30 @@ $link = mysqli_connect('localhost','root','','ejphp');
         					<th>Colección</th>
         				</tr>
         			</thead>
-        			<tbody>
-        			</tbody>
-        			';
+        			<tbody>';
+
+                                while($fila = mysqli_fetch_assoc($query)){
+                                        echo '<tr><td>',$fila['numref'],'</td>',
+                                                '<td>',$fila['nombre'],'</td>',
+                                                '<td>',$fila['descripcion'],'</td>',
+                                                '<td>',$fila['color'],'</td>',
+                                                '<td>',$fila['anyo'],'</td>',
+                                                '<td>',$fila['edadmin'],'</td>',
+                                                '<td>',$fila['edadmax'],'</td>',
+                                                '<td>',$fila['precio']."€" ,'</td>',
+                                                '<td>',$fila['stock'],'</td>',
+                                                '<td>',$fila['deMarca'],'</td>',
+                                                '<td>',$fila['deCol'],'</td></tr>';    
+
+                                }
+
+
+        			echo '</tbody>';
+        			
 
         			echo '</table>';
 
-
+                                echo '</div>';
 
 
 
@@ -56,8 +74,6 @@ $link = mysqli_connect('localhost','root','','ejphp');
         else{
         	echo "Fallo en la desconexión";
         }
-
-
 
 
 

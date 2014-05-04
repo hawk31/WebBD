@@ -1,4 +1,4 @@
-// Esto es jQuery puro y duro
+$(function(){// Esto es jQuery puro y duro
 
 function respuesta(r){
 	$("#tablavacia").html(r);  // Mostramos respuesta en id "tablavacía"
@@ -9,7 +9,7 @@ function error(e){
 }
 
 function peticion(p){
-
+	console.log("Algo");
 	var parametro = {
 		variable1: $("#search").val() // Coge el valor que haya en un input #search
 	};
@@ -18,10 +18,10 @@ function peticion(p){
 
 					"server.php", // Voy a ejecutar esto
 					parametro,
-					respuesta(),
+					respuesta,
 					'html'
 				);
 
 }
 
-$("#searchButton").click(peticion); 
+$("#searchButton").click(peticion); });
