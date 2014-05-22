@@ -4,7 +4,7 @@ $usuario = $_POST['usuario'];
 $pass = $_POST['pass'];
 $name = $_POST['name'];
 $email = $_POST['email'];
-$tel = $_POST['tel']
+$tel = $_POST['tel'];
 
 
 $mysqli = new mysqli('localhost', 'root', '', 'juguete');
@@ -16,7 +16,7 @@ if (mysqli_connect_errno()) {
 }
 
 $stmt = $mysqli->prepare("INSERT INTO cliente VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param('sssss', $usuario, $pass, $name, $email, $tel);
+$stmt->bind_param('sssss', $usuario, $pass, $name, $tel, $email);
 
 
 /* ejecuta sentencias prepradas */

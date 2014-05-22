@@ -12,6 +12,13 @@
   <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
 
+
+  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+
   <style type="text/css">
   #navbar{
   	margin-top: 40px;
@@ -79,6 +86,23 @@
 
 		</div>
 
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+
+		<div class="row">
+
+			<div class="col-md-6 col-md-offset-2">
+
+			<p> Nuestro catálogo de juguetes ha ido aumentando año tras año, así como
+			nuestra fiel base de clientes. ¡Sé el siguiente en registrarte y aprovecha ofertas
+			exclusivas!</p>
+			
+			<div id="myfirstchart" style="height: 250px;"></div>
+
+			</div>
+
+		</div>
+
 
 	
  		
@@ -115,6 +139,24 @@
 	map.setView(new L.LatLng(37.34, -6.05),13);
 	map.addLayer(osm);
 	var marker = L.marker([37.34, -6.05]).addTo(map);
+</script>
+
+<script type="text/javascript">
+Morris.Bar({
+  element: 'myfirstchart',
+  data: [
+    { y: '2006', a: 250, b:78},
+    { y: '2007', a: 261,  b: 110 },
+    { y: '2008', a: 270,  b: 185 },
+    { y: '2009', a: 250,  b: 225 },
+    { y: '2010', a: 320,  b: 300 },
+    { y: '2011', a: 300,  b: 502 },
+    { y: '2012', a: 350, b: 552 }
+  ],
+  xkey: 'y',
+  ykeys: ['a','b'],
+  labels: ['Productos disponibles', 'Clientes registrados']
+});
 </script>
 
 

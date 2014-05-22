@@ -1,7 +1,21 @@
 $(function(){// Esto es jQuery puro y duro
 
+
+var pet = $.post(
+		"server2.php",
+		respuesta2,
+		'html'
+	);
+
+
+
+
 function respuesta(r){
 	$("#tablavacia").html(r);  // Mostramos respuesta en id "tablavacía"
+}
+
+function respuesta2(r){
+	$("#publi").html(r);  // Mostramos respuesta en id "publi"
 }
 
 function error(e){

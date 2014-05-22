@@ -3,7 +3,7 @@
 $(function(){
 
 function respuesta(r){
-	$("#enviar").html(r);
+	$("#enviar").replaceWith(r);
 }
 
 function error(e){
@@ -17,7 +17,7 @@ function peticion(p){
 		pass: $("#pass").val(),
 		name: $("#name").val(),
 		email: $("#email").val(),
-		tel: $("#tel").val()
+		tel: $("#tel").val(),
 
 	};
 
